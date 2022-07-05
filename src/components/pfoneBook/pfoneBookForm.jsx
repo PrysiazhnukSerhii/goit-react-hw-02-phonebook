@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 import { BookForm, BookItem, BookButton } from './pfoneBook.styled';
