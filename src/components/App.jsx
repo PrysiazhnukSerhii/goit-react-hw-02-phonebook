@@ -31,7 +31,7 @@ export class App extends Component {
   submitContacts = (data, checkName) => {
     let findedСoincidence = true;
 
-    this.state.contacts.map(evn => {
+    let check = this.state.contacts.map(evn => {
       if (evn.name === checkName) {
         return (findedСoincidence = false);
       }
