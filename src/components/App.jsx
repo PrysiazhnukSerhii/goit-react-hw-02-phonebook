@@ -33,14 +33,13 @@ export class App extends Component {
 
     this.state.contacts.map(evn => {
       if (evn.name === checkName) {
-        findedСoincidence = false;
-        return;
+        return (findedСoincidence = false);
       }
     });
 
     if (!findedСoincidence) {
       alert(`${checkName} is already in contacts`);
-      return;
+      return false;
     }
 
     this.setState(prevState => {
