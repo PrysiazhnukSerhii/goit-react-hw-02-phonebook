@@ -33,7 +33,8 @@ export class App extends Component {
 
     this.state.contacts.map(evn => {
       if (evn.name === checkName) {
-        return (findedСoincidence = false);
+        findedСoincidence = false;
+        return findedСoincidence;
       }
     });
 
