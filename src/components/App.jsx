@@ -35,7 +35,6 @@ export class App extends Component {
       if (evn.name === checkName) {
         return (findedСoincidence = false);
       }
-      ('');
     });
 
     if (!findedСoincidence) {
