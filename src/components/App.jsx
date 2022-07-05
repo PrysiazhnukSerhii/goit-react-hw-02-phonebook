@@ -31,11 +31,11 @@ export class App extends Component {
   submitContacts = (data, checkName) => {
     let findedСoincidence = true;
 
-    let check = this.state.contacts.map(evn => {
-      if (evn.name === checkName) {
-        return (findedСoincidence = false);
-      }
-    });
+    //  this.state.contacts.map(evn => {
+    //   if (evn.name === checkName) {
+    //     return (findedСoincidence = false);
+    //   }
+    // });
 
     if (!findedСoincidence) {
       alert(`${checkName} is already in contacts`);
