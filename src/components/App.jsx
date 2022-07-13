@@ -24,7 +24,6 @@ export class App extends Component {
     const result = this.state.contacts.filter(information =>
       information.name.toLowerCase().includes(this.state.name.toLowerCase())
     );
-
     return result;
   };
 
@@ -58,7 +57,9 @@ export class App extends Component {
   componentDidMount() {
     let returnedContacnts = JSON.parse(localStorage.getItem('contacts'));
 
-    this.setState({ contacts: returnedContacnts });
+    if (returnedContacnts.length > 1) {
+      this.setState({ contacts: returnedContacnts });
+    }
   }
 
   render() {
